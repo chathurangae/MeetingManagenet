@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:id="@+id/parent_layout"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".view.auth.Login">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@android:drawable/ic_menu_report_image"
+        android:contentDescription="@null" />
+
+
+    <EditText
+        android:id="@+id/email_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_bottom_line"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/ic_email"
+        android:ems="10"
+        android:hint="@string/hint_text_email"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/gray"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/password_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_bottom_line"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:ems="10"
+        android:hint="@string/hint_text_password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/gray"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/green_chateau"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+</LinearLayout>
